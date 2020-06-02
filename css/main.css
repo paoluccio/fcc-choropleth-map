@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+  margin: 0;
+  min-height: 1050px;
+  min-width: 1575px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  background-image: radial-gradient(circle 401px at 50.6% -0.3%, rgba(255, 255, 255, 0.31) 1.2%, rgba(36, 212, 219, 1) 100.2%);
+  position: relative;
+}
+
+.tooltip {
+  border-radius: 10px;
+  padding: 7px;
+  box-sizing: border-box;
+  background-color: #d8ec31;
+  color: #000;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  text-align: left;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+  box-shadow: 0px 2px 5px #060606;
+  pointer-events: none;
+}
+
+.info {
+  margin: 0;
+  padding: 3px;
+}
+
+.layout {
+  transform: translateX(90px) scale(1.4);
+}
+
+.state {
+  stroke: rgba(27, 94, 32, 0.45);
+}
+
+.nation {
+  stroke: rgba(27, 94, 32, 0.46);
+}
+
+.county {
+  stroke: rgba(0, 0, 0, 0.09);
+}
+
+.county:hover {
+  stroke: #000;
+}
+
+#legend g.tick {
+  font-size: 11px;
+}
+
+#legend g.tick:first-of-type, #legend g.tick:last-of-type {
+  display: none;
+}
+
+.coded-by {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+
+.coded-by a {
+  color: inherit;
+}
+
+.visible {
+  opacity: 0.9;
+}
+
+@media (max-width: 1580px) {
+  body {
+    background: #24d4db;
+  }
+}
